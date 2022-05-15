@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -32,7 +33,7 @@ int main()
 	return table, table_size, op, zmienna, i;
 }
 
-string dodawanie(int table, char i, int zmienna, char op, const int table_size)
+int dodawanie(int table, char i, int zmienna, char op, const int table_size)
 {
 
 	for (i = 0; i < table_size; i++)
