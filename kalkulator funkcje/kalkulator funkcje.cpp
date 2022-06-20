@@ -5,21 +5,30 @@ using namespace std;
 
 float odejmowanie(float k, float o)
 {
-	return k - o;
+	float x = 0;
+	x = k - o;
+	return x;
 }
 
 float dodawanie(float k, float o)
 {
-	return k + o;
+	float x = 0;
+	x = k + o;
+	return x;
 }
 
 float mnozenie(float k, float o)
 {
-	return k * o;
+	float x = 0;
+	x = k * o;
+	return x;
 }
+
 float dzielenie(float k, float o)
 {
-	return k / o;
+	float x = 0;
+	x = k / o;
+	return x;
 }
 
 
@@ -31,6 +40,8 @@ int main()
 	char i;
 	int zmienna;
 	char op;
+	float k;
+	float o;
 
 	for (i = 0; i < table_size; i++)
 	{
@@ -59,13 +70,16 @@ int main()
 		case '+':
 		{
 			float wynik = 0;
-			for (float j = 0; j < i; j++)
+			for (int j = 0; j < i; j++)
 			{
-				cout << dodawanie(j,);
+				k = table[j];
+				o = table[++j];
+				wynik = dodawanie(k, o);
 			}
-			cout << "wynik operacji " << op << ": " << wynik << endl;
+			cout << "wynik operacji " << op << ": "<< wynik << endl;
 			break;
 		}
+		break;
 		}
 	}
 }
