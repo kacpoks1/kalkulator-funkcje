@@ -64,26 +64,56 @@ int main()
 	cin >> op;
 
 
-	for (float h = 0; h < i; h++)
+	switch (op)
 	{
-		switch (op)
+		case '+':
 		{
-			case '+':
+			float wynik = 0;
+			wynik = table[0];
+			for (int h = 1; h < i; ++h)
 			{
-				float wynik = 0;
-				for (int j = 0; j < h; j++)
-				{
-					k = table[j];
-					o = table[++j];
-					table[0] = dodawanie(k, o);
-					wynik = dodawanie(table[0], o);
-					cout << "wynik operacji " << op << ": " << wynik << endl;
-
-				}
-	
+				wynik = dodawanie(wynik, table[h]);
 			}
+			cout << "wynik " << wynik << endl;
+	
+		}
+
+		case '-':
+		{
+			float wynik = 0;
+			wynik = table[0];
+			for (int h = 1; h < i; ++h)
+			{
+				wynik = odejmowanie(wynik, table[h]);
+			}
+			cout << "wynik " << wynik << endl;
 
 		}
-	
+
+		case '*':
+		{
+			float wynik = 0;
+			wynik = table[0];
+			for (int h = 1; h < i; ++h)
+			{
+				wynik = mnozenie(wynik, table[h]);
+			}
+			cout << "wynik " << wynik << endl;
+
+		}
+
+		case '/':
+		{
+			float wynik = 0;
+			wynik = table[0];
+			for (int h = 1; h < i; ++h)
+			{
+				wynik = dzielenie(wynik, table[h]);
+			}
+			cout << "wynik " << wynik << endl;
+
+		}
 	}
+	
+	
 }
