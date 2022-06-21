@@ -42,6 +42,7 @@ int main()
 	char op;
 	float k;
 	float o;
+	float a;
 
 	for (i = 0; i < table_size; i++)
 	{
@@ -74,12 +75,16 @@ int main()
 			{
 				k = table[j];
 				o = table[++j];
-				wynik = dodawanie(k, o);
+				table[0] = dodawanie(k, o);
+				wynik = dodawanie(table[0], o);
+				cout << "wynik operacji " << op << ": " << wynik << endl;
+
 			}
-			cout << "wynik operacji " << op << ": "<< wynik << endl;
-			break;
+
+			
 		}
 		break;
 		}
+	
 	}
 }
