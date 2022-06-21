@@ -101,6 +101,7 @@ int main()
 			cout << "wynik " << wynik << endl;
 
 		}
+		break;
 
 		case '/':
 		{
