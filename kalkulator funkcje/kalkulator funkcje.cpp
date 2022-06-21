@@ -36,7 +36,7 @@ float dzielenie(float k, float o)
 int main()
 {
 	const int table_size = 20;
-	int table[table_size];
+	float table[table_size];
 	char i;
 	int zmienna;
 	char op;
@@ -77,6 +77,7 @@ int main()
 			cout << "wynik " << wynik << endl;
 	
 		}
+		break;
 
 		case '-':
 		{
@@ -89,6 +90,7 @@ int main()
 			cout << "wynik " << wynik << endl;
 
 		}
+		break;
 
 		case '*':
 		{
@@ -114,6 +116,7 @@ int main()
 			cout << "wynik " << wynik << endl;
 
 		}
+		break;
 	}
 	
 	
